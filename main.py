@@ -42,7 +42,7 @@ def monte_carlo_simulation(stock_symbol, num_simulations, num_days):
         return call_price
 
     risk_free_rate = 0.05       # Assumed risk-free rate
-    strike_price = 250q         # Example strike price (10% above current price)
+    strike_price = 250         # Example strike price (10% above current price)
     time_to_expiration = 1      # One year until option expiration
 
     call_option_price = black_scholes_call(S0, strike_price, time_to_expiration, risk_free_rate, sigma=std_dev*np.sqrt(252))
